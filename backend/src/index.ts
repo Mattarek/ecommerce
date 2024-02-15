@@ -7,8 +7,8 @@ import path from 'path';
 const app: Application = express();
 
 dotenv.config();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // parsing my data with json
+app.use(express.urlencoded({ extended: true })); // parsing my request from forms with extended 
 
 
 app.use(
